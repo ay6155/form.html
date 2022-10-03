@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background:#147c74;
+        font-family: sans-serif ;
+    }
+    .container{
+        padding:0;
+        background-color: #55540f;
+        width:15.625em;
+        
+        margin:0 auto;
+
+    }
+    .container .calculator{
+        text-align:center;
+        padding:1em;
+    }
+    .return-value{
+        background-color: #fff;
+        width:100%;
+        color:rgba(77, 72, 72, 0.5);
+        margin-bottom: 1em;
+        padding:0.1em;
+        
+    }
+    .button button[data-function="sign"]{
+        background: #f3f02f;
+        color:rgba(92, 89, 89, 0.521);
+        border:none;
+    }
+        
+        .button button{
+            border:0;
+            outline: none;
+            padding:0 1em 0.3em;
+            margin-top:1em;
+            background-color: #fff;
+            font-size:1em;
+            color:rgba(77, 72, 72, 0.5)
+
+        }
+        .button button:hover{
+            color:#55540f;
+            background-color: darkgray;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="return-value">0</div>
+            <div class="button">
+                <button data="7" data-type="7" data-function="7">7</button>
+                <button data="8" data-type="8" data-function="8">8</button>
+                <button data="9" data-type="9" data-function="9">9</button>
+                <button data="*" data-type="*" data-function="sign">*</button>
+                <button data="4" data-type="4" data-function="4">4</button>
+                <button data="5" data-type="5" data-function="5">5</button>
+                <button data="6" data-type="6" data-function="6">6</button>
+                <button data="-" data-type="-" data-function="sign">-</button>
+                <button data="1" data-type="1" data-function="1">1</button>
+                <button data="2" data-type="2" data-function="2">2</button>
+                <button data="3" data-type="3" data-function="3">3</button>
+                <button data="+" data-type="+" data-function="sign">+</button>
+                <button data="." data-type="." data-function=".">.</button>
+                <button data="0" data-type="0" data-function="0">0</button>
+                <button data="=" data-type="=" data-function="sign">=</button>
+                <button data="/" data-type="/" data-function="sign">/</button>
+                <button data="del" data-type="del" data-function="del">DEL</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
